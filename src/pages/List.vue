@@ -1,9 +1,22 @@
 <template>
-  <div class="container">List</div>
+  <div class="container">
+    <common-header :title="title"></common-header>
+  </div>
 </template>
 
 <script>
-export default {};
+import CommonHeader from 'components/Header/Common.vue'
+export default {
+  name: 'ListPage',
+  components: {
+    CommonHeader
+  },
+  data () {
+    return {
+      title: '列表'
+    }
+  }
+};
 </script>
 
 <style lang="scss" scoped></style>
