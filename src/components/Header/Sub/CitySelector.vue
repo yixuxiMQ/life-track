@@ -1,19 +1,18 @@
 <template>
   <div class="container">
     <router-link to="City">
-      <span class="city-name">{{ city }}</span>
+      <span class="city-name">{{ cityName }}</span>
       <span class="iconfont icon-header-arrow"></span>
     </router-link>
   </div>
 </template>
 
 <script>
+import { mapState } from "vuex";
 export default {
   name: "CitySelector",
-  data() {
-    return {
-      city: "全部",
-    };
+  computed: {
+    ...mapState(["cityName"]),
   },
 };
 </script>
@@ -30,13 +29,13 @@ export default {
     @include vh-center;
     width: 100%;
     height: 100%;
-    .city-name{
-        font-size: .16rem;
-        font-weight: bold;
+    .city-name {
+      font-size: 0.16rem;
+      font-weight: bold;
     }
-    .iconfont{
-        font-size: .08rem;
-        margin-left: .03rem;
+    .iconfont {
+      font-size: 0.08rem;
+      margin-left: 0.03rem;
     }
   }
 }
