@@ -8,7 +8,8 @@ module.exports = {
                 'js': '@/assets/js',
                 'styles': '@/assets/styles',
                 'components': '@/components',
-                'utils': '@/utils'
+                'utils': '@/utils',
+                'models': '@/models'
             }
         }
   }
