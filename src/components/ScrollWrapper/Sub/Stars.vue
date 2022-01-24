@@ -20,11 +20,13 @@ export default {
 <style lang="scss" scoped>
 @import "styles/variables.scss";
 
-.stars-wrapper{
-    color: #ccc;
-
-    .active{
-        color: $starColor;
-    }
+.stars-wrapper {
+  color: #ccc;
+  span {
+    padding: 0 0.05rem 0 0;
+  }
+  .active {
+    color: $starColor;
+  }
 }
 </style>
