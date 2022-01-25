@@ -4,7 +4,7 @@
       :to="{ path: '/detail', query: { field: 'view', id: data.id } }"
     >
       <div class="img">
-        <img :src="data.img" alt="data.name" class="view-img" />
+        <img :src="data.img" :alt="data.name" class="view-img" />
       </div>
       <div class="info">
         <h1 class="title">{{ data.name }}</h1>
@@ -13,7 +13,9 @@
           <span class="score">{{ data.score }}分</span>
         </p>
         <p class="others">
-          <span class="price">￥{{ data.default_price }}<span class="qi"> 起</span></span>
+          <span class="price"
+            >￥{{ data.default_price }}<span class="qi"> 起</span></span
+          >
           <span class="clty-name">{{ data.city_name }}</span>
         </p>
       </div>
@@ -78,16 +80,16 @@ export default {
       justify-content: space-between;
       height: 0.3rem;
       line-height: 0.3rem;
-      font-size: .14rem;
+      font-size: 0.14rem;
 
-      .price{
-          font-size: .2rem;
-          color: $defaultGreen;
-          vertical-align: -0.01rem;
-          .qi{
-              font-size: .14rem;
-              color: #000;
-          }
+      .price {
+        font-size: 0.2rem;
+        color: $defaultGreen;
+        vertical-align: -0.01rem;
+        .qi {
+          font-size: 0.14rem;
+          color: #000;
+        }
       }
     }
   }

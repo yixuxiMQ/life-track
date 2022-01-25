@@ -36,7 +36,6 @@ export default {
 @import "styles/variables.scss";
 
 .hotel-item {
-  display: flex;
   position: relative;
   background-color: #fff;
   border-bottom: 1px solid #ddd;

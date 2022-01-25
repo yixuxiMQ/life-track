@@ -54,7 +54,6 @@ export default {
 @import "styles/variables.scss";
 
 .food-item {
-  display: flex;
   position: relative;
   background-color: #fff;
   border-bottom: 1px solid #ddd;

@@ -18,7 +18,7 @@
             >元起</span
           >
           <span class="item">
-            <span class="city">{{ data.city_name }}</span>
+            <span class="city">{{ data.area }}</span>
           </span>
         </div>
       </div>
