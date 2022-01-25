@@ -6,7 +6,7 @@ class IndexModel extends HTTP {
     return new Promise((resolve) => {
       this.axiosPost({
         url: config.API.GET_HOME_DATAS,
-        data: cityId,
+        data: { cityId },
         success(data) {
           resolve({
             data,
