@@ -3381,7 +3381,7 @@
     "domelementtype" "^2.0.1"
     "entities" "^2.0.0"
 
-"dom7@^2.1.5":
+"dom7@^2.1.3":
   "integrity" "sha1-p5QRAXgAsx2EAAcM2uu/ySwfY3c="
   "resolved" "https://registry.npmmirror.com/dom7/download/dom7-2.1.5.tgz"
   "version" "2.1.5"
@@ -8065,6 +8065,11 @@
     "safer-buffer" "^2.0.2"
     "tweetnacl" "~0.14.0"
 
+"ssr-window@^1.0.1":
+  "integrity" "sha1-MHUqakZm53Z/C35qpvwv29DZs2k="
+  "resolved" "https://registry.npmmirror.com/ssr-window/download/ssr-window-1.0.1.tgz"
+  "version" "1.0.1"
+
 "ssr-window@^2.0.0":
   "integrity" "sha1-mMMBrvmVIzF/jWlhjwAQeRCW78Q="
   "resolved" "https://registry.npmmirror.com/ssr-window/download/ssr-window-2.0.0.tgz"
@@ -8335,13 +8340,13 @@
     "unquote" "~1.1.1"
     "util.promisify" "~1.0.0"
 
-"swiper@^5.2.0":
-  "integrity" "sha512-7QjA0XpdOmiMoClfaZ2lYN6ICHcMm72LXiY+NF4fQLFidigameaofvpjEEiTQuw3xm5eksG5hzkaRsjQX57vtA=="
-  "resolved" "https://registry.npmmirror.com/swiper/download/swiper-5.4.5.tgz"
-  "version" "5.4.5"
+"swiper@^4.0.7":
+  "integrity" "sha512-se6I7PWWu950NAMXXT+ENtF/6SVb8mPyO+bTfNxbQBILSeLqsYp3Ndap+YOA0EczOIUlea274PKejT6gKZDseA=="
+  "resolved" "https://registry.npmmirror.com/swiper/download/swiper-4.5.1.tgz"
+  "version" "4.5.1"
   dependencies:
-    "dom7" "^2.1.5"
-    "ssr-window" "^2.0.0"
+    "dom7" "^2.1.3"
+    "ssr-window" "^1.0.1"
 
 "table@^5.2.3":
   "integrity" "sha1-EpLRlQDOP4YFOwXw6Ofko7shB54="
@@ -8839,10 +8844,13 @@
   "resolved" "https://registry.nlark.com/vm-browserify/download/vm-browserify-1.1.2.tgz"
   "version" "1.1.2"
 
-"vue-awesome-swiper@^4.1.1":
-  "integrity" "sha512-50um10t6N+lJaORkpwSi1wWuMmBI1sgFc9Znsi5oUykw2cO5DzLaBHcO2JNX21R+Ue4TGoIJDhhxjBHtkFrTEQ=="
-  "resolved" "https://registry.npmmirror.com/vue-awesome-swiper/download/vue-awesome-swiper-4.1.1.tgz"
-  "version" "4.1.1"
+"vue-awesome-swiper@^3.1.3":
+  "integrity" "sha512-E7suzkyApO8vNZbgdEnjSmnpsmQZyRvSVXJ7sey3XYwKPOkLhH3+GnHroBw+5PZIQXvWBwdCeQsPG1xQ1r1Rhg=="
+  "resolved" "https://registry.npmmirror.com/vue-awesome-swiper/download/vue-awesome-swiper-3.1.3.tgz"
+  "version" "3.1.3"
+  dependencies:
+    "object-assign" "^4.1.1"
+    "swiper" "^4.0.7"
 
 "vue-eslint-parser@^7.0.0":
   "integrity" "sha1-IUtd6pYQB/z/su5luJEjB2KNDa8="
@@ -8908,7 +8916,7 @@
   "resolved" "https://registry.nlark.com/vue-template-es2015-compiler/download/vue-template-es2015-compiler-1.9.1.tgz"
   "version" "1.9.1"
 
-"vue@^2 || ^3.0.0-0", "vue@^2.0.0", "vue@^2.6.11", "vue@2.x":
+"vue@^2 || ^3.0.0-0", "vue@^2.0.0", "vue@^2.6.11":
   "integrity" "sha512-x2284lgYvjOMj3Za7kqzRcUSxBboHqtgRE2zlos1qWaOye5yUmHn42LB1250NJBLRwEcdrB0JRwyPTEPhfQjiQ=="
   "resolved" "https://registry.npmmirror.com/vue/download/vue-2.6.14.tgz"
   "version" "2.6.14"
