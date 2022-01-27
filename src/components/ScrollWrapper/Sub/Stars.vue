@@ -24,6 +24,7 @@ export default {
   color: #ccc;
   span {
     padding: 0 0.05rem 0 0;
+    box-sizing: border-box;
   }
   .active {
     color: $starColor;

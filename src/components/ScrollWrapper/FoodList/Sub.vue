@@ -1,7 +1,7 @@
 <template>
   <div class="food-item">
     <router-link
-      :to="{ path: '/detail', query: { fieild: 'food', id: data.id } }"
+      :to="{ path: '/detail', query: { field: 'food', id: data.id } }"
     >
       <div class="img">
         <img class="food-img" :src="data.img" :alt="data.name" />
@@ -61,7 +61,7 @@ export default {
   .img {
     width: 1.2rem;
     height: 1.2rem;
-    padding: .1rem;
+    padding: 0.1rem;
     box-sizing: border-box;
 
     .food-img {
@@ -111,8 +111,8 @@ export default {
     .others {
       display: flex;
       justify-content: space-between;
-      font-size: .14rem;
-      line-height: .25rem;
+      font-size: 0.14rem;
+      line-height: 0.25rem;
     }
   }
 }

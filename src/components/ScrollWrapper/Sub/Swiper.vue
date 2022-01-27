@@ -38,6 +38,7 @@ export default {
 @import "styles/variables.scss";
 
 .swiper-wrapper {
+  height: 2rem;
   & /deep/ .swiper-pagination-bullet-active {
     background-color: $defaultGreen;
   }

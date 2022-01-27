@@ -2,12 +2,23 @@
   <div class="scroll-wrapper" ref="wrapper">
     <div class="scroll-content">
       <detail-swiper :picDatas="detailData.pics"></detail-swiper>
+      <detail-food
+        v-if="field === 'food'"
+        :name="detailData.name"
+        :starNum="Number(detailData.star)"
+        :score="detailData.score"
+        :address="detailData.address"
+        :price="detailData.default_price"
+        :dateTime="detailData.open_datetime"
+        :recom="detailData.recom"
+      ></detail-food>
     </div>
   </div>
 </template>
 
 <script>
 import DetailSwiper from "./Sub/Swiper.vue";
+import DetailFood from "./Detail/Food.vue";
 
 import BetterScroll from "better-scroll";
 import { DetailModel } from "models/detail.js";
@@ -16,6 +27,7 @@ export default {
   name: "DetailScrollWrapper",
   components: {
     DetailSwiper,
+    DetailFood,
   },
   data() {
     return {
@@ -24,6 +36,7 @@ export default {
       detailData: {},
     };
   },
+
   mounted() {
     this.scroll = new BetterScroll(this.$refs.wrapper);
     this.field = this.$route.query.field;
@@ -43,7 +56,6 @@ export default {
           data.service && (data.service = tools.jsonToArr(data.service));
 
           this.detailData = data;
-          console.log(this.detailData);
         }
       });
     },
