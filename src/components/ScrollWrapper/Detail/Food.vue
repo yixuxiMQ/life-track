@@ -6,6 +6,9 @@
     <detail-price :price="price"></detail-price>
     <detail-open-date-time :dateTime="dateTime"></detail-open-date-time>
     <detail-recom :recom="recom"></detail-recom>
+    <detail-comment-keyword
+      :commentKeyword="commentKeyword"
+    ></detail-comment-keyword>
   </div>
 </template>
 
@@ -16,6 +19,7 @@ import DetailAddress from "./Sub/Address.vue";
 import DetailPrice from "./Sub/Price.vue";
 import DetailOpenDateTime from "./Sub/OpenDateTime.vue";
 import DetailRecom from "./Sub/Recom.vue";
+import DetailCommentKeyword from "./Sub/CommentKeyWord.vue";
 
 export default {
   name: "DetailFood",
@@ -27,6 +31,7 @@ export default {
     price: String,
     dateTime: String,
     recom: String,
+    commentKeyword: Array,
   },
   components: {
     DetailName,
@@ -35,6 +40,7 @@ export default {
     DetailPrice,
     DetailOpenDateTime,
     DetailRecom,
+    DetailCommentKeyword,
   },
 };
 </script>
