@@ -29,5 +29,6 @@ export default {
   @include flex-row;
   background-color: #fff;
   border-bottom: 1px solid #ddd;
+  flex-wrap: wrap;
 }
 </style>
