@@ -3,8 +3,14 @@
     <div class="scroll-content">
       <Error v-if="errorShow"></Error>
       <div v-else>
-        <view-list v-if="field === 'view'" :viewList="listDatas[cityId]"></view-list>
-        <food-list v-if="field === 'food'" :foodList="listDatas[cityId]"></food-list>
+        <view-list
+          v-if="field === 'view'"
+          :viewList="listDatas[cityId]"
+        ></view-list>
+        <food-list
+          v-if="field === 'food'"
+          :foodList="listDatas[cityId]"
+        ></food-list>
         <hotel-list
           v-if="field === 'hotel'"
           :hotelList="listDatas[cityId]"
@@ -13,7 +19,10 @@
           v-if="field === 'massage'"
           :massageList="listDatas[cityId]"
         ></massage-list>
-        <ktv-list v-if="field === 'ktv'" :ktvList="listDatas[cityId]"></ktv-list>
+        <ktv-list
+          v-if="field === 'ktv'"
+          :ktvList="listDatas[cityId]"
+        ></ktv-list>
         <loading :loadingShow="loadingShow[cityId]"></loading>
       </div>
     </div>
@@ -74,6 +83,10 @@ export default {
             }, 500);
           } else {
             this.errorShow = true;
+            console.log({
+              statusCode: res.status,
+              errorMsg: res.err,
+            });
           }
         });
       }
