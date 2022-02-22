@@ -16,8 +16,9 @@ class DetailModel extends HTTP {
             status: 0,
           });
         },
-        error() {
+        error(err) {
           resolve({
+            err,
             status: -1,
           });
         },
